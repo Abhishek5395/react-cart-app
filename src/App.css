@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+#root{overflow-x: hidden;}
+.shopping-page.active{display:none;}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #189AB4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-bottom: 55px;
+  position: relative;
+}
+.heading{
+  background-color: #000;
+  width: 100%;
+  padding: 20px 12px;
+  margin-top:0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+span.close {
+  position: absolute;
+  right: 27%;
+  top: 18%;
+  background: #000;
+  border-radius: 50px;
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  padding: 3px 7px;
+  font-size: large;
+  cursor:pointer;
+  display:none;
+}
+span.close.active {
+  display:block;
+}
